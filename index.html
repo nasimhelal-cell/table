@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table making </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr bgcolor="#A3ADAC">
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="name"></td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td><input type="radio" name="sex" value="male">Male <br><input type="radio" name="sex"
+                    value="female">female</td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td> <select name="color" id="color">
+                    <option value="green" selected>green</option>
+                    <option value="red">red</option>
+                    <option value="black">black</option>
+                </select> </td>
+        </tr>
+        <tr>
+            <td>Check all that apply</td>
+            <td>
+                <input type="checkbox" value="Over 6 feet tall">Over 6 feet tall <br>
+                <input type="checkbox" value="Over 200 pounds">Over 200 pounds 
+            </td>
+        </tr>
+        <tr>
+           <td colspan="2">Describe your athletic ability:</td>
+        </tr>
+        <tr>
+           <td colspan="2"> <textarea width="100%" name="messege" id="messege" cols="60" rows="2"></textarea> </td>
+        </tr>
+        <tr >
+            <td colspan="2"> <input style="width:100%;" type="submit" value="Enter my information"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
